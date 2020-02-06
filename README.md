@@ -1,5 +1,5 @@
-# delta_t
+# Test bindera
 
-This is for measuring delta t.
+Kliknij w to poniżej.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tobiaszjarosiewicz/binder_test/master)
