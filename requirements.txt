@@ -1,2 +1,7 @@
 numpy>=1.16*
 matplotlib>=3*
+import multiprocessing
+import random
+from scipy import spatial
+import time
+
