@@ -187,41 +187,4 @@ def exec_multi(in_ar, fname):
         out_ar.append(elem)
     return out_ar
 
-#t_s = time.clock()
-
-x = 128
-y = 128
-####img1 = gen_rnd_ar(x, y)
-#img1 = np.zeros((x, y, 3), dtype=np.uint8)
-#fill_rgb(img1, x, y)
-#img1 = gen_rnd_sparse(x, y)
-img1 = np.random.rand(x, y, 3)
-#img1 = gen_rnd_ar(x, y)
-
-show_img(img1)
-#print(img1.shape)
-
-
-ar_s = split_ar(img1, 0)
-out_ar = exec_multi(ar_s, ar_rgb_sel)
-final_array = join_ar(out_ar, 0)
-
-ar_s = split_ar(final_array, 1)
-out_ar = exec_multi(ar_s, ar_rgb_sel)
-final_array = join_ar(out_ar, 1)
-
-final_array = rgb_norm(final_array, x, y)
-
-show_img(final_array)
-
-pt = [0, 0, 0]
-#pfound = final_array[spatial.KDTree(final_array).query(pt)[1]]
-
-#final_array = join_ar(ar_s)
-#show_img(final_array)
-
-#show_img(img1)
-
-#t_f = time.clock()
-#print(t_f-t_s)
 
